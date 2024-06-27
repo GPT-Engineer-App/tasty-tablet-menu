@@ -7,11 +7,11 @@ import { faUtensils, faDrumstickBite, faIceCream, faCoffee } from "@fortawesome/
 
 const Index = () => {
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-8 p-4">
+    <div className="h-screen w-screen flex flex-col items-center justify-center space-y-8 p-4" style={{ backgroundColor: 'var(--primary)', color: 'var(--primary-foreground)' }}>
       <h1 className="text-4xl font-bold">Welcome to Our Restaurant</h1>
       <Separator />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <Card>
+        <Card className="bg-secondary text-secondary-foreground">
           <CardHeader>
             <CardTitle>
               <FontAwesomeIcon icon={faUtensils} className="mr-2" />
@@ -23,7 +23,7 @@ const Index = () => {
             <Button variant="outline" className="mt-4">View Menu</Button>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="bg-secondary text-secondary-foreground">
           <CardHeader>
             <CardTitle>
               <FontAwesomeIcon icon={faDrumstickBite} className="mr-2" />
@@ -35,7 +35,7 @@ const Index = () => {
             <Button variant="outline" className="mt-4">View Menu</Button>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="bg-secondary text-secondary-foreground">
           <CardHeader>
             <CardTitle>
               <FontAwesomeIcon icon={faIceCream} className="mr-2" />
@@ -47,7 +47,7 @@ const Index = () => {
             <Button variant="outline" className="mt-4">View Menu</Button>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="bg-secondary text-secondary-foreground">
           <CardHeader>
             <CardTitle>
               <FontAwesomeIcon icon={faCoffee} className="mr-2" />
